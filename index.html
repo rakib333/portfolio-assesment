@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment portfolio project</title>
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body-bg">
+    <!-- header part start  -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#banner"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main part start  -->
+    <main class="mt-5">
+      <!-- hero section start  -->
+      <section id="banner" class="hero-img-bg text-center">
+        <div class="hero-item pt-5 pb-5">
+          <div class="container pt-5 pb-5">
+            <h2 class="text-white pt-5 fs-1">
+              Hi I am <span class="text-danger">Habibullah Rakib</span>
+            </h2>
+            <h1 class="text-white pb-5 fs-1">A Front-end Developer</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section structure  -->
+      <section id="about" class="mt-5 mb-5">
+        <div class="container">
+          <h2 class="text-center">About me</h2>
+          <hr class="w-50 mx-auto" />
+
+          <div class="d-md-flex d-sm-block">
+            <img class="img-fluid mt-5" src="images/profile.png" alt="" />
+            <div class="mt-5 ms-md-5">
+              <h2 class="fs-3 fw-bold text-black-50">My Bio</h2>
+              <p class="fs-6 fw-lighter text-black-50">
+                I am a front-end web developer with a solid background in
+                JavaScript frameworks like ReactJS and Vue.js and is also
+                intimately familiar with the MERN (MongoDB, Express, React, and
+                Node.js) software stack.
+              </p>
+
+              <div class="bio-skills p-3">
+                <h1 class="fs-3 fw-bold text-black-50">My Skills</h1>
+                <hr />
+                <span class="fw-light fs-4 text-primary">HTML</span>
+                <div class="skill-progress mb-3">
+                  <div class="skills html">90%</div>
+                </div>
+
+                <span class="fw-light fs-4 text-primary">CSS</span>
+                <div class="skill-progress mb-3">
+                  <div class="skills css">80%</div>
+                </div>
+
+                <span class="fw-light fs-4 text-primary">JavaScript</span>
+                <div class="skill-progress mb-3">
+                  <div class="skills js">65%</div>
+                </div>
+
+                <span class="fw-light fs-4 text-primary">Bootstrap</span>
+                <div class="skill-progress mb-3">
+                  <div class="skills bootstrap">75%</div>
+                </div>
+
+                <span class="fw-light fs-4 text-primary">Tailwind</span>
+                <div class="skill-progress mb-3">
+                  <div class="skills tailwind">65%</div>
+                </div>
+
+                <span class="fw-light fs-4 text-primary">Express js</span>
+                <div class="skill-progress mb-3">
+                  <div class="skills node">55%</div>
+                </div>
+                <span class="fw-light fs-4 text-primary">MongoDB</span>
+                <div class="skill-progress mb-3">
+                  <div class="skills mongo">60%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio section structure  -->
+      <section id="portfolio">
+        <div class="container">
+          <h2 class="fw-bold fs-2 text-center text-black mb-4">
+            Portfolio <span class="text-primary">projects</span>
+          </h2>
+
+          <!-- filter  -->
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="filter-input" placeholder="Filter projects">
+            <button class="btn btn-secondary" id="filter-btn">Search</button>
+          </div>
+
+          <div id="filter-parent" class="mt-5 row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <div class="col">
+                <div class="card p-2 project-img h-100">
+                    <img class="img-fluid border border-1 rounded-1" src="images//todo.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title"><a id="filter-title" class="text-decoration-none" target="_blank" href="https://fantastic-redux-todoandcounter-app.netlify.app/" >Redux todo project</a></h3>
+                        <p class="card-text">Card description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2 project-img h-100">
+                    <img class="img-fluid border border-1 rounded-1" src="images/counter.png" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title"><a id="filter-title" class="text-decoration-none" target="_blank" href="https://fantastic-redux-todoandcounter-app.netlify.app/" >Redux Counter project</a></h3>
+                        <p class="card-text">Card description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2 project-img h-100">
+                    <img class="img-fluid border border-1 rounded-1" src="images/taskmanager.png" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title"><a id="filter-title" class="text-decoration-none" target="_blank" href="https://github.com/rakib333/mern-crud-app" >Redux Task manager project</a></h3>
+                        <p class="card-text">Card description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2 project-img h-100">
+                    <img class="img-fluid border border-1 rounded-1" src="images/text-editor.png" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title"><a id="filter-title" class="text-decoration-none" target="_blank" href="https://rakib333.github.io/text-editor/" >Text editor project</a></h3>
+                        <p class="card-text">Card description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2 project-img h-100">
+                    <img class="img-fluid border border-1 rounded-1" src="images/bank.png" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title"><a id="filter-title" class="text-decoration-none" target="_blank" href="https://rakib333.github.io/funcional-bank-calculation/" >Functional bank calculation</a></h3>
+                        <p class="card-text">Card description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card p-2 project-img h-100">
+                    <img class="img-fluid border border-1 rounded-1" src="images/crudapp.png" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title"><a id="filter-title" class="text-decoration-none" target="_blank" href="https://github.com/rakib333/mern-crud-app" >MERN Crud App</a></h3>
+                        <p class="card-text">Card description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-2 project-img h-100">
+                    <img class="img-fluid border border-1 rounded-1" src="images/pin.png" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title"><a id="filter-title" class="text-decoration-none" target="_blank" href="https://github.com/rakib333/mern-crud-app" >JS pin matcher</a></h3>
+                        <p class="card-text">Card description</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer part start  -->
+    <footer></footer>
+
+    <!-- bootstrap js  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

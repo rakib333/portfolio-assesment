@@ -1,0 +1,51 @@
+html {
+	scroll-behavior: smooth;
+}
+.body-bg {
+    background-color: rgb(220, 229, 238);
+}
+/* bonus part style  */
+.hero-img-bg {
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-item {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(23,89,172,.5) 24%, rgba(10, 11, 12, 0.4) 36%, rgba(9, 13, 15, 0.3) 56%, rgba(11,162,242,.2) 70%, rgba(63, 105, 114, 0.1) 100%);
+}
+
+/* skills part css  */
+.bio-skills {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 25px 29px 5px rgba(0,0,0,0.1);
+
+
+}
+
+.skill-progress {
+    width: 90%;
+    background-color: #e9d5d5;
+  }
+  
+  .skills {
+    text-align: right;
+    color: white;
+  }
+  
+  .html {width: 90%; background-color: #04AA6D;}
+  .css {width: 80%; background-color: #2196F3;}
+  .js {width: 65%; background-color: #f44336;}
+  .bootstrap {width: 75%; background-color: #808080;}
+  .tailwind {width: 65%; background-color: #1db62a;}
+  .node {width: 55%; background-color: #893ae4;}
+  .mongo {width: 45%; background-color: #10d489;}
+
+  /* project part css  */
+  .project-img img {
+    height: 200px;
+  }
