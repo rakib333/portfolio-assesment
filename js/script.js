@@ -35,22 +35,37 @@ const testimonial = document.querySelector("#testimonial");
 const contact = document.querySelector("#contact");
 
 about.addEventListener("click", function () {
-  smoothScroll("#about-section", 1500);
+  smoothScroll("#about-section", 1000);
 });
 portfolio.addEventListener("click", function () {
-  smoothScroll("#portfolio-section", 2000);
+  smoothScroll("#portfolio-section", 1000);
 });
 testimonial.addEventListener("click", function () {
-  smoothScroll("#about-section", 1500);
+  smoothScroll("#testimonial-section", 1000);
 });
 contact.addEventListener("click", function () {
-  smoothScroll("#about-section", 1500);
+  smoothScroll("#contact-section", 1000);
 });
 
 // filter the projects
-document.getElementById("filter-btn").addEventListener("click", filterNames);
-function filterNames() {
-  let filterArray = [];
-  // get the value of input
-  const getInput = document.getElementById("filter-input").value;
+const search = () => {
+    const searchBox = document.getElementById('filter-input').value.toLowerCase();
+    let parentDiv = document.getElementById('filter-parent');
+    let elements = document.querySelectorAll('.card');
+    let titles = parentDiv.getElementsByTagName('a');
+
+    for (let i = 0; i < titles.length; i++){
+        let matched = elements[i].getElementsByTagName('a')[0];
+        if (matched) {
+            let textValue = matched.textContent || matched.innerHTML;
+            if (textValue.toLowerCase().indexOf(searchBox) > -1) {
+                elements[i].style.display = "";
+            }
+            else {
+                elements[i].style.display = "none"
+            }
+        }
+    }
+
+    document.getElementById('filter-input').value = '';
 }
