@@ -1,6 +1,3 @@
-html {
-	scroll-behavior: smooth;
-}
 .body-bg {
     background-color: rgb(220, 229, 238);
 }
@@ -15,7 +12,7 @@ html {
 .hero-item {
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, rgba(23,89,172,.5) 24%, rgba(10, 11, 12, 0.4) 36%, rgba(9, 13, 15, 0.3) 56%, rgba(11,162,242,.2) 70%, rgba(63, 105, 114, 0.1) 100%);
+    background: linear-gradient(90deg, rgba(23,89,172,.5) 24%, rgba(10, 11, 12, .7) 36%, rgba(9, 13, 15, 0.6) 56%, rgba(11,162,242,.2) 70%, rgba(63, 105, 114, 0.5) 100%);
 }
 
 /* skills part css  */
@@ -43,9 +40,27 @@ html {
   .bootstrap {width: 75%; background-color: #808080;}
   .tailwind {width: 65%; background-color: #1db62a;}
   .node {width: 55%; background-color: #893ae4;}
-  .mongo {width: 45%; background-color: #10d489;}
+  .mongo {width: 60%; background-color: #10d489;}
 
   /* project part css  */
   .project-img img {
     height: 200px;
+  }
+
+
+
+  /* testimonials  */
+  .card-bg {
+    background-color: #04AA6D;
+  }
+
+  @media only screen and (max-width: 576px) {
+    .carousel-para{
+      margin-bottom: 30px;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .carousel-para{
+      margin-bottom: 30px;
+    }
   }
