@@ -2,7 +2,7 @@
 
 function smoothScroll(target, duration) {
   let setTarget = document.querySelector(target);
-  // let targetPosition = setTarget.getBoundingClientRect().top;
+  let targetPosition = setTarget.getBoundingClientRect().top;
   let startPosition = window.pageYOffset;
   let distance = targetPosition - startPosition;
   let startTime = null;
@@ -34,18 +34,18 @@ const portfolio = document.querySelector("#portfolio");
 const testimonial = document.querySelector("#testimonial");
 const contact = document.querySelector("#contact");
 
-// about.addEventListener("click", function () {
-//   smoothScroll("#about-section", 1000);
-// });
-// portfolio.addEventListener("click", function () {
-//   smoothScroll("#portfolio-section", 1000);
-// });
-// testimonial.addEventListener("click", function () {
-//   smoothScroll("#testimonial-section", 1000);
-// });
-// contact.addEventListener("click", function () {
-//   smoothScroll("#contact-section", 500);
-// });
+about.addEventListener("click", function () {
+  smoothScroll("#about-section", 1000);
+});
+portfolio.addEventListener("click", function () {
+  smoothScroll("#portfolio-section", 1000);
+});
+testimonial.addEventListener("click", function () {
+  smoothScroll("#testimonial-section", 1000);
+});
+contact.addEventListener("click", function () {
+  smoothScroll("#contact-section", 500);
+});
 
 // filter the projects
 const search = () => {
