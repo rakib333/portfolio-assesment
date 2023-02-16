@@ -2,7 +2,7 @@
 
 function smoothScroll(target, duration) {
   let setTarget = document.querySelector(target);
-  let targetPosition = setTarget.getBoundingClientRect().top;
+  // let targetPosition = setTarget.getBoundingClientRect().top;
   let startPosition = window.pageYOffset;
   let distance = targetPosition - startPosition;
   let startTime = null;
@@ -34,18 +34,18 @@ const portfolio = document.querySelector("#portfolio");
 const testimonial = document.querySelector("#testimonial");
 const contact = document.querySelector("#contact");
 
-about.addEventListener("click", function () {
-  smoothScroll("#about-section", 1000);
-});
-portfolio.addEventListener("click", function () {
-  smoothScroll("#portfolio-section", 1000);
-});
-testimonial.addEventListener("click", function () {
-  smoothScroll("#testimonial-section", 1000);
-});
-contact.addEventListener("click", function () {
-  smoothScroll("#contact-section", 1000);
-});
+// about.addEventListener("click", function () {
+//   smoothScroll("#about-section", 1000);
+// });
+// portfolio.addEventListener("click", function () {
+//   smoothScroll("#portfolio-section", 1000);
+// });
+// testimonial.addEventListener("click", function () {
+//   smoothScroll("#testimonial-section", 1000);
+// });
+// contact.addEventListener("click", function () {
+//   smoothScroll("#contact-section", 500);
+// });
 
 // filter the projects
 const search = () => {
@@ -69,3 +69,37 @@ const search = () => {
 
     document.getElementById('filter-input').value = '';
 }
+
+
+// contact form validation
+document.getElementById('submit-btn').addEventListener('click', function () {
+  const firstName = document.getElementById('first-name');
+  const lastName = document.getElementById('last-name');
+  const emailInput = document.getElementById('email-input');
+  const passInput = document.getElementById('password-input');
+  if (firstName.value === '') {
+    const errMsg = document.getElementById('error-first-name');
+    
+    errMsg.innerText = 'Please input your first name'
+  }
+  else if (lastName.value === '') {
+    const errMsg2 = document.getElementById('error-last-name');
+    errMsg2.innerText = 'Please input your last name'
+  }
+  else if (emailInput.value === '') {
+    const emailErr = document.getElementById('error-email');
+    emailErr.innerText = 'Enter a valid email'
+  }
+    
+  else if (passInput.value === '' || passInput.value.length <= 5) {
+    const errPass = document.getElementById('error-pass');
+    errPass.innerText = 'Pass should be at 6 character'
+  }
+    
+    
+  else {
+    return true
+  }
+
+  
+})

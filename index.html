@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assessment portfolio project</title>
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <!-- bootstrap css  -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
@@ -274,6 +281,65 @@
           </div>
         </div>
       </section>
+
+      <!-- contact part structure  -->
+      <section id="contact-section" class="mt-5">
+        <div class="container">
+          <h2 class="text-center fw-bold fs-3">Contact <span class="text-primary">Me</span></h2>
+          <hr class="w-75 mx-auto">
+          <form action="" class="w-75 shadow-lg mx-auto border border-3 border-light p-4 rounded-3 mt-5">
+
+            <div class="pt-3">
+              <label class="form-label fw-normal fs-4 text-black">First Name</label>
+              <input type="text" class="form-control" id="first-name" placeholder="Your first name"> <br>
+              <small id="error-first-name" class="text-danger"></small>
+            </div>
+
+            <div class="pt-3">
+              <label  id="name" class="form-label fw-normal fs-4 text-black">Last Name</label>
+              <input type="text" class="form-control" id="last-name" placeholder="Your last name" required> <br>
+              <small id="error-last-name" class="text-danger"></small>
+            </div>
+
+            <div class="pb-3">
+              <label class="form-label fw-normal fs-4 text-black">Email</label>
+              <input type="email" class="form-control" id="email-input" placeholder="Enter your email" required> <br>
+              <small id="error-email" class="text-danger"></small>
+            </div>
+
+            <div class="pb-3">
+              <label  id="pass" class="form-label fw-normal fs-4 text-black">Password</label>
+              <input type="password" class="form-control" id="password-input" placeholder="Enter password"> <br>
+              <small id="error-pass" class="text-danger"></small>
+            </div>
+
+            <div class="pb-3">
+              <label class="form-label fw-normal fs-4 text-black">Select One</label>
+              <select class="form-select form-select-sm mb-3" required aria-label=".form-select-lg example">
+                <option selected>Open this select menu</option>
+                <option value="1">Full stack service</option>
+                <option value="2">Front End service</option>
+                <option value="3">BackEnd Service</option>
+              </select>
+              <div class="invalid-feedback">Please select feedback</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="validationTextarea" class="form-label fw-normal fs-4 text-black">Write something</label>
+              <textarea class="form-control is-invalid" id="validationTextarea" rows="4" placeholder="Your massage"></textarea>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+            <button class="btn btn-outline-primary w-100 fs-4 fw-bold" value="submit" type="submit" id="submit-btn">Send</button>
+          </form>
+          <div class="w-75 mx-auto mt-4">
+            
+          </div>
+        </div>
+
+      </section>
+
     </main>
 
     <!-- footer part start  -->
